@@ -1,0 +1,325 @@
+version = 1
+[custom]
+enable_rule_generator = true
+overwrite_original_rules = true
+
+[[custom_groups]]
+name = "🚀 节点选择"
+type = "select"
+rule = ["[]♻️ 自动选择","[]🇭🇰 香港节点","[]🇨🇳 台湾节点","[]🇸🇬 狮城节点","[]🇯🇵 日本节点","[]🇺🇲 美国节点","[]🇰🇷 韩国节点","[]🚀 手动切换","[]DIRECT"]
+
+[[custom_groups]]
+name = "🚀 手动切换"
+type = "select"
+rule = [".*"]
+
+[[custom_groups]]
+name = "♻️ 自动选择"
+type = "url-test"
+rule = [".*"]
+url = "http://www.gstatic.com/generate_204"
+interval = 300
+tolerance = 50
+
+[[custom_groups]]
+name = "📲 电报消息"
+type = "select"
+rule = ["[]🚀 节点选择","[]♻️ 自动选择","[]🇭🇰 香港节点","[]🇨🇳 台湾节点","[]🇸🇬 狮城节点","[]🇯🇵 日本节点","[]🇺🇲 美国节点","[]🇰🇷 韩国节点","[]🚀 手动切换","[]DIRECT"]
+
+[[custom_groups]]
+name = "📹 油管视频"
+type = "select"
+rule = ["[]🚀 节点选择","[]♻️ 自动选择","[]🇭🇰 香港节点","[]🇨🇳 台湾节点","[]🇸🇬 狮城节点","[]🇯🇵 日本节点","[]🇺🇲 美国节点","[]🇰🇷 韩国节点","[]🚀 手动切换","[]DIRECT"]
+
+[[custom_groups]]
+name = "🎥 奈飞视频"
+type = "select"
+rule = ["[]🎥 奈飞节点","[]🚀 节点选择","[]♻️ 自动选择","[]🇭🇰 香港节点","[]🇨🇳 台湾节点","[]🇸🇬 狮城节点","[]🇯🇵 日本节点","[]🇺🇲 美国节点","[]🇰🇷 韩国节点","[]🚀 手动切换","[]DIRECT"]
+
+[[custom_groups]]
+name = "📺 巴哈姆特"
+type = "select"
+rule = ["[]🇨🇳 台湾节点","[]🚀 节点选择","[]🚀 手动切换","[]DIRECT"]
+
+[[custom_groups]]
+name = "📺 哔哩哔哩"
+type = "select"
+rule = ["[]🎯 全球直连","[]🇭🇰 香港节点","[]🇨🇳 台湾节点"]
+
+[[custom_groups]]
+name = "🌍 国外媒体"
+type = "select"
+rule = ["[]🚀 节点选择","[]♻️ 自动选择","[]🇭🇰 香港节点","[]🇨🇳 台湾节点","[]🇸🇬 狮城节点","[]🇯🇵 日本节点","[]🇺🇲 美国节点","[]🇰🇷 韩国节点","[]🚀 手动切换","[]DIRECT"]
+
+[[custom_groups]]
+name = "🌏 国内媒体"
+type = "select"
+rule = ["[]DIRECT","[]🇭🇰 香港节点","[]🇨🇳 台湾节点","[]🇸🇬 狮城节点","[]🇯🇵 日本节点","[]🚀 手动切换"]
+
+[[custom_groups]]
+name = "📢 谷歌FCM"
+type = "select"
+rule = ["[]DIRECT","[]🚀 节点选择","[]🇭🇰 香港节点","[]🇨🇳 台湾节点","[]🇸🇬 狮城节点","[]🇯🇵 日本节点","[]🇺🇲 美国节点","[]🇰🇷 韩国节点","[]🚀 手动切换"]
+
+#[[custom_groups]]
+#name = "📢 谷歌🇨🇳Play下载"
+#type = "select"
+#rule = ["[]🚀 节点选择","[]♻️ 自动选择","[]🇭🇰 香港节点","[]🇨🇳 台湾节点","[]🇸🇬 狮城节点","[]🇯🇵 日本节点","[]🇺🇲 美国节点","[]🇰🇷 韩国节点","[]🚀 手动切换","[]DIRECT"]
+
+#[[custom_groups]]
+#name = "📢 谷歌🇨🇳Play服务"
+#type = "select"
+#rule = ["[]🚀 节点选择","[]♻️ 自动选择","[]🇭🇰 香港节点","[]🇨🇳 台湾节点","[]🇸🇬 狮城节点","[]🇯🇵 日本节点","[]🇺🇲 美国节点","[]🇰🇷 韩国节点","[]🚀 手动切换","[]DIRECT"]
+
+#[[custom_groups]]
+#name = "📢 谷歌🇨🇳Play服务"
+#type = "select"
+#rule = ["[]🚀 节点选择","[]♻️ 自动选择","[]🇭🇰 香港节点","[]🇨🇳 台湾节点","[]🇸🇬 狮城节点","[]🇯🇵 日本节点","[]🇺🇲 美国节点","[]🇰🇷 韩国节点","[]🚀 手动切换","[]DIRECT"]
+
+#[[custom_groups]]
+#name = "📢 谷歌🇨🇳"
+#type = "select"
+#rule = ["[]DIRECT","[]🚀 节点选择","[]🇭🇰 香港节点","[]🇨🇳 台湾节点","[]🇸🇬 狮城节点","[]🇯🇵 日本节点","[]🇺🇲 美国节点","[]🇰🇷 韩国节点","[]🚀 手动切换"]
+
+#[[custom_groups]]
+#name = "📢 谷歌"
+#type = "select"
+#rule = ["[]🚀 节点选择","[]♻️ 自动选择","[]🇭🇰 香港节点","[]🇨🇳 台湾节点","[]🇸🇬 狮城节点","[]🇯🇵 日本节点","[]🇺🇲 美国节点","[]🇰🇷 韩国节点","[]🚀 手动切换","[]DIRECT"]
+
+[[custom_groups]]
+name = "Ⓜ️ 微软云盘"
+type = "select"
+rule = ["[]DIRECT","[]🚀 节点选择","[]🇭🇰 香港节点","[]🇨🇳 台湾节点","[]🇸🇬 狮城节点","[]🇯🇵 日本节点","[]🇺🇲 美国节点","[]🇰🇷 韩国节点","[]🚀 手动切换"]
+
+[[custom_groups]]
+name = "Ⓜ️ 微软服务"
+type = "select"
+rule = ["[]DIRECT","[]🚀 节点选择","[]🇭🇰 香港节点","[]🇨🇳 台湾节点","[]🇸🇬 狮城节点","[]🇯🇵 日本节点","[]🇺🇲 美国节点","[]🇰🇷 韩国节点","[]🚀 手动切换"]
+
+[[custom_groups]]
+name = "🍎 苹果服务"
+type = "select"
+rule = ["[]DIRECT","[]🚀 节点选择","[]🇭🇰 香港节点","[]🇨🇳 台湾节点","[]🇸🇬 狮城节点","[]🇯🇵 日本节点","[]🇺🇲 美国节点","[]🇰🇷 韩国节点","[]🚀 手动切换"]
+
+[[custom_groups]]
+name = "🎮 游戏平台"
+type = "select"
+rule = ["[]DIRECT","[]🚀 节点选择","[]🇭🇰 香港节点","[]🇨🇳 台湾节点","[]🇸🇬 狮城节点","[]🇯🇵 日本节点","[]🇺🇲 美国节点","[]🇰🇷 韩国节点","[]🚀 手动切换"]
+
+#[[custom_groups]]
+#name = "🎶 网易音乐"
+#type = "select"
+#rule =  ["[]DIRECT","[]🚀 节点选择","[]♻️ 自动选择","(网易|音乐|解锁|Music|NetEase)"]
+
+[[custom_groups]]
+name = "🎯 全球直连"
+type = "select"
+rule = ["[]DIRECT","[]🚀 节点选择","[]♻️ 自动选择"]
+
+#[[custom_groups]]
+#name = "🛑 广告拦截"
+#type = "select"
+#rule = ["[]REJECT","[]DIRECT"]
+
+#[[custom_groups]]
+#name = "🍃 应用净化"
+#type = "select"
+#rule = ["[]REJECT","[]DIRECT"]
+
+[[custom_groups]]
+name = "🐟 漏网之鱼"
+type = "select"
+rule = ["[]🚀 节点选择","[]♻️ 自动选择","[]DIRECT","[]🇭🇰 香港节点","[]🇨🇳 台湾节点","[]🇸🇬 狮城节点","[]🇯🇵 日本节点","[]🇺🇲 美国节点","[]🇰🇷 韩国节点","[]🚀 手动切换"]
+
+[[custom_groups]]
+name = "🇭🇰 香港节点"
+type = "url-test"
+rule = ["(港|HK|Hong Kong)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 300
+tolerance = 50
+
+[[custom_groups]]
+name = "🇯🇵 日本节点"
+type = "url-test"
+rule = ["(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|[^-]日|JP|Japan)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 300
+tolerance = 50
+
+[[custom_groups]]
+name = "🇺🇲 美国节点"
+type = "url-test"
+rule = ["(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 300
+tolerance = 150
+
+[[custom_groups]]
+name = "🇨🇳 台湾节点"
+type = "url-test"
+rule = ["(台|新北|彰化|TW|Taiwan)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 300
+tolerance = 50
+
+[[custom_groups]]
+name = "🇸🇬 狮城节点"
+type = "url-test"
+rule = ["(新加坡|坡|狮城|SG|Singapore)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 300
+tolerance = 50
+
+[[custom_groups]]
+name = "🇰🇷 韩国节点"
+type = "url-test"
+rule = ["(KR|Korea|KOR|首尔|韩|韓)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 300
+tolerance = 50
+
+[[custom_groups]]
+name = "🎥 奈飞节点"
+type = "select"
+rule = ["(NF|奈飞|解锁|Netflix|NETFLIX|Media|媒体)"]
+
+[[rulesets]]
+group = "🎯 全球直连"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list"
+
+[[rulesets]]
+group = "🎯 全球直连"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list"
+
+#[[rulesets]]
+#group = "🛑 广告拦截"
+#ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list"
+
+#[[rulesets]]
+#group = "🍃 应用净化"
+#ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list"
+
+[[rulesets]]
+group = "📢 谷歌FCM"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list"
+
+#[[rulesets]]
+#group = "📢 谷歌🇨🇳Play下载"
+#ruleset = "[]DOMAIN-SUFFIX,xn--ngstr-lra8j.com"
+
+#[[rulesets]]
+#group = "📢 谷歌🇨🇳Play服务"
+#ruleset = "[]DOMAIN-SUFFIX,services.googleapis.cn"
+
+#[[rulesets]]
+#group = "📢 谷歌🇨🇳Play服务"
+#ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleCNProxyIP.list"
+
+#[[rulesets]]
+#group = "📢 谷歌🇨🇳"
+#ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleCN.list"
+
+#[[rulesets]]
+#group = "📢 谷歌"
+#ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Google.list"
+
+[[rulesets]]
+group = "🎯 全球直连"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list"
+
+[[rulesets]]
+group = "🎯 全球直连"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list"
+
+[[rulesets]]
+group = "Ⓜ️ 微软云盘"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/OneDrive.list"
+
+[[rulesets]]
+group = "Ⓜ️ 微软服务"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list"
+
+[[rulesets]]
+group = "🍎 苹果服务"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list"
+
+[[rulesets]]
+group = "📲 电报消息"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list"
+
+#[[rulesets]]
+#group = "🎶 网易音乐"
+#ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/NetEaseMusic.list"
+
+[[rulesets]]
+group = "🎮 游戏平台"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Epic.list"
+
+[[rulesets]]
+group = "🎮 游戏平台"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Sony.list"
+
+[[rulesets]]
+group = "🎮 游戏平台"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list"
+
+[[rulesets]]
+group = "📹 油管视频"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list"
+
+[[rulesets]]
+group = "🎥 奈飞视频"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Netflix.list"
+
+[[rulesets]]
+group = "📺 巴哈姆特"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bahamut.list"
+
+[[rulesets]]
+group = "📺 哔哩哔哩"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BilibiliHMT.list"
+
+[[rulesets]]
+group = "📺 哔哩哔哩"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list"
+
+[[rulesets]]
+group = "🌏 国内媒体"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list"
+
+[[rulesets]]
+group = "🌍 国外媒体"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list"
+
+[[rulesets]]
+group = "🚀 节点选择"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list"
+
+#[[rulesets]]
+#group = "🎯 全球直连"
+#ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list"
+
+[[rulesets]]
+group = "🎯 全球直连"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list"
+
+[[rulesets]]
+group = "🎯 全球直连"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list"
+
+[[rulesets]]
+group = "🎯 全球直连"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list"
+
+#[[rulesets]]
+#group = "🎯 全球直连"
+#ruleset = "[]GEOIP,LAN"
+
+[[rulesets]]
+group = "🎯 全球直连"
+ruleset = "[]GEOIP,CN"
+
+[[rulesets]]
+group = "🐟 漏网之鱼"
+ruleset = "[]FINAL"
